@@ -39,7 +39,7 @@ chmod og-rwx "$SSL_SERVER_KEY"
 cat >| "$SSL_V3_EXT" <<EOF
 [v3_req]
 authorityKeyIdentifier = keyid, issuer
-basicConstraints = critical, CA:TRUE
+basicConstraints = critical, CA:FALSE
 keyUsage = digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
 subjectAltName = DNS:localhost
 EOF
